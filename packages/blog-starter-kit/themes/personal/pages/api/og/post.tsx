@@ -16,7 +16,7 @@ const fontMedium = fetch(
 ).then((res) => res.arrayBuffer());
 
 const fontSemiBold = fetch(
-	new URL('../../../assets/Pangram-SemiBold.otf', import.meta.url),
+	new URL('../../../assets/Pangram-Bold.otf', import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 const fontBold = fetch(new URL('../../../assets/Pangram-Bold.otf', import.meta.url)).then(
