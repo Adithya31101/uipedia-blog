@@ -17,7 +17,6 @@ import { DateFormatter } from '../components/date-formatter';
 import { Footer } from '../components/footer';
 import { Layout } from '../components/layout';
 import { MarkdownToHtml } from '../components/markdown-to-html';
-import { PersonalHeader } from '../components/personal-theme-header';
 import {
 	PageByPublicationDocument,
 	PostFullFragment,
@@ -170,7 +169,6 @@ export default function PostOrPage(props: Props) {
 		<AppProvider publication={publication} post={maybePost} page={maybePage}>
 			<Layout>
 				<Container className="mx-auto flex max-w-3xl flex-col items-stretch gap-10 px-5 py-10">
-					<PersonalHeader />
 					<article className="flex flex-col items-start gap-10 pb-10">
 						{props.type === 'post' && <Post {...props} />}
 						{props.type === 'page' && <Page {...props} />}

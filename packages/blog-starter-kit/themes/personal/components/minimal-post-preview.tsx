@@ -20,7 +20,7 @@ export const MinimalPostPreview = ({ title, date, slug, commentCount }: Props) =
 			<h2 className="text-lg leading-tight tracking-tight text-black dark:text-white">
 				<Link href={postURL}>{title}</Link>
 			</h2>
-			<p className="flex flex-row items-center gap-2">
+			<p className="flex flex-row items-center gap-2 gradient-text-purple">
 				<Link href={postURL} className="text-sm text-neutral-600 dark:text-neutral-400">
 					<DateFormatter dateString={date} />
 				</Link>

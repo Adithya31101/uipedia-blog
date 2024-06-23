@@ -20,19 +20,19 @@
     font-size: 80%;
     background: #f0efed;
 }
-  
+
 .dark .prose code {
     --tw-bg-opacity: 1;
     background-color: rgba(36, 41, 46, var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgba(238, 238, 238, var(--tw-text-opacity));
 }
-  
+
 .prose pre {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
-  
+
 .prose pre code {
     background-color: transparent;
     border-radius: 0px;
@@ -45,4 +45,22 @@
 .dark .prose pre code {
     background-color: transparent;
     color: #ddd;
+}
+
+* {
+    font-family: 'Pangram';
+}
+
+
+.gradient-text-purple {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, #6A48F2 3.33%, #CDA2EF 100%);
+  background: linear-gradient(90deg, #6A48F2 3.33%, #CDA2EF 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }

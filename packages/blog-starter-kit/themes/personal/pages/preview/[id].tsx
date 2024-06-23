@@ -9,7 +9,6 @@ import { CoverImage } from '../../components/cover-image';
 import { Footer } from '../../components/footer';
 import { Layout } from '../../components/layout';
 import { MarkdownToHtml } from '../../components/markdown-to-html';
-import { PersonalHeader } from '../../components/personal-theme-header';
 import {
 	DraftByIdDocument,
 	DraftByIdQuery,
@@ -26,7 +25,7 @@ type Props = {
 	publication: Publication;
 };
 
-export default function Post({ publication, post }: Props) {
+export default function PostPage({ publication, post }: Props) {
 	if (!post) {
 		return <ErrorPage statusCode={404} />;
 	}
@@ -56,7 +55,6 @@ export default function Post({ publication, post }: Props) {
 		<AppProvider publication={publication} post={post}>
 			<Layout>
 				<Container className="mx-auto flex max-w-3xl flex-col items-stretch gap-10 px-5 py-10">
-					<PersonalHeader />
 					<article className="flex flex-col items-start gap-10 pb-10">
 						<Head>
 							<title>{post.seo?.title || post.title}</title>
