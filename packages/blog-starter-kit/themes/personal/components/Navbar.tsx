@@ -36,6 +36,12 @@ export default function ResourceNavbar({
 			url: "/about",
 			target: "none",
 		},
+    {
+			name: "Blog",
+			icon: "blogs",
+			url: "/blog",
+			target: "none",
+		},
 	];
 
 	const mobileMenuExtraItems = [
@@ -94,7 +100,7 @@ export default function ResourceNavbar({
 			}
 		>
 			<div className="mx-4">
-				<Link href="/">
+				<Link href="https://uipedia.design/">
 					{categorySelected && isMobile ? (
 						<div className="left-0 z-20 flex justify-between items-center gap-2 cursor-pointer text-white">
 							<img className="rotate-180" src="/chevron_right.svg" />
